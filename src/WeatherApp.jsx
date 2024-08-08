@@ -8,13 +8,11 @@ export const WeatherApp = () => {
 
   const url = "http://api.openweathermap.org/data/2.5/weather";
 
-  //ocultar API_KEY
-  const API_KEY = "086cac9a20b4a79a1c7c8414458e643b";
-
   //hacer hook
   const fetchWeather = async () => {
+    const apiKey = import.meta.env.VITE_API_KEY;
     try {
-      const response = await fetch(`${url}?q=${city}&appid=${API_KEY}`);
+      const response = await fetch(`${url}?q=${city}&appid=${apiKey}`);
       const data = await response.json();
       setWeatherData(data);
       setIsLoading(false);
