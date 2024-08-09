@@ -6,7 +6,7 @@ export const WeatherApp = () => {
   const [weatherData, setWeatherData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  const url = "http://api.openweathermap.org/data/2.5/weather";
+  const url = "https://api.openweathermap.org/data/2.5/weather";
 
   //hacer hook
   const fetchWeather = async () => {
