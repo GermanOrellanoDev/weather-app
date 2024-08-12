@@ -1,4 +1,5 @@
 OBJETIVO DE LA APP:
+
 Aplicar los conocimientos adquiridos, por ejemplo:
 - Crear proyecto React desde cero
 - Consumir API externa
